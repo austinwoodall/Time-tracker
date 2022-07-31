@@ -3,7 +3,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import {useTailwind} from 'tailwind-rn';
 import { MaterialIcons  } from '@expo/vector-icons'; 
 
-
 //not used yet
 interface Props {
     task:string;
@@ -13,12 +12,11 @@ interface Props {
     timeValueHour:number;
 }
 
-
 //Task card
-export default function Card(){
+export default function TaskCard(){
     const tailwind = useTailwind();
     return(
-        <View style={tailwind('bg-white mt-20 mx-5 rounded-sm border-black border-2 p-2')}>
+        <View style={tailwind('bg-white mx-5 rounded-md border-black border-2 p-2')}>
             <View style={tailwind('bg-white flex-row justify-between')}>
                 <View style={tailwind('bg-white')}>
                     <Text style={tailwind('text-black')}>Task Title </Text>
@@ -45,3 +43,4 @@ const styles = StyleSheet.create({
     },
   });
   
+
