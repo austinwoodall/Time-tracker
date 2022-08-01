@@ -12,6 +12,7 @@
   margin-top: 5rem
 }
 
+<<<<<<< HEAD
 .ml-3 {
   margin-left: 0.75rem
 }
@@ -20,6 +21,8 @@
   margin-left: auto
 }
 
+=======
+>>>>>>> 3cbdcf04a4df3bccd97e619a4665f5c40a883d2f
 .flex {
   display: flex
 }
@@ -107,6 +110,7 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
+<<<<<<< HEAD
 .bg-red-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity))
@@ -115,6 +119,11 @@
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity))
+=======
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity))
+>>>>>>> 3cbdcf04a4df3bccd97e619a4665f5c40a883d2f
 }
 
 .bg-blue-200 {
