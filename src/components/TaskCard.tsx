@@ -29,9 +29,9 @@ export default function TaskCard({task,duration=0,description='',note=''}:Props)
     }
 
     return(
-        <View style={tailwind('bg-white mx-5 rounded-md border-black border-2 p-2')}>
+        <View style={tailwind('bg-white w-full rounded-md border-black border-2 p-2')}>
             <View style={tailwind('bg-white flex-row justify-between')}>
-                <View style={tailwind('bg-white')}>
+                <View style={tailwind('bg-white flex w-1/2')}>
                     <Text style={tailwind('text-black')}>{task} </Text>
                     <Text style={tailwind('text-gray-300')}>{description} </Text>
                 </View>
