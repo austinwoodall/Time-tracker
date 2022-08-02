@@ -3,9 +3,9 @@ import { View } from "react-native";
 import { useTailwind } from "tailwind-rn";
 
 const Card = ({ children, style }: any) => {
-    const tailwind = useTailwind();
+	const tailwind = useTailwind();
 
-    return <View style={[tailwind('')]}>{children}</View>;
-}
+	return <View style={[tailwind("")]}>{children}</View>;
+};
 
 export default Card;

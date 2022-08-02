@@ -1,0 +1,14 @@
+{
+    "bracketSpacing": true,
+    "tabSize": 4,
+    "useTabs": true,
+    "semicolons": true,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "trimTrailingWhitespace": true,
+    "insertFinalNewline": true,
+    "trimFinalNewline": true,
+    "eol": "\n",
+    "endOfLine": "auto",
+    "indentUnit": 4
+}
