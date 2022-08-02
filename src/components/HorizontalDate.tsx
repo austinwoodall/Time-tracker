@@ -14,7 +14,7 @@ function DateCard({day}:DateCardProps){
 
     return(
         <View style={tailwind('bg-white w-16 mx-1 rounded-md border-black border-2')}>
-            <View style={tailwind('bg-red-400 w-full h-2')}></View>
+            <View style={tailwind('bg-gray-400 w-full h-2')}></View>
             <Text style={tailwind('text-center')}>{typeof dayIndex==="number" && daysOfWeek[dayIndex]}</Text>
             <Text style={tailwind('text-center pb-2')}>{day.getDate()}</Text>
         </View>
@@ -42,7 +42,7 @@ export default function HorizontalDate(){
         {day: add(today, {days:7}),id:'15'},
     ]
     return(
-        <View style={tailwind('bg-white w-full rounded-md border-black border-2 pt-6 pb-2 flex flex-row')}>
+        <View style={tailwind('bg-white w-full rounded-md border-black border-2 py-2 flex flex-row justify-center')}>
             <FlatList 
                 horizontal
                 data={weekDays} 

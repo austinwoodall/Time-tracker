@@ -4,4 +4,7 @@ export {default as Card} from './common/Card';
 export {default as TaskCard} from './TaskCard';
 export {default as TaskContainer} from './TaskContainer';
 export {default as TimeContainer} from './TimeContainer';
+export {default as TimeContainerStatic} from './TimeContainerStatic';
 export {default as HorizontalDate} from './HorizontalDate';
+export {default as TaskListHeader} from './TaskListHeader';
+export {default as TaskSelection} from './TaskSelection';

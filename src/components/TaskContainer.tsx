@@ -2,11 +2,9 @@
   import React, {useState, useEffect, useRef} from 'react'
   import { StyleSheet, Text, View, Pressable,FlatList } from 'react-native';
   import {useTailwind} from 'tailwind-rn';
-  import { MaterialCommunityIcons } from '@expo/vector-icons';
-  import { MaterialIcons  } from '@expo/vector-icons'; 
+  import { MaterialIcons, MaterialCommunityIcons  } from '@expo/vector-icons'; 
   import TaskCard from './TaskCard';
-  
-  //Notes:
+  import {format} from 'date-fns';
   
   const taskList: {task:string;duration?:number;description?:string; note?:string, id:number}[]=[
     {
@@ -54,9 +52,10 @@
 
   export default function TaskContainer(){
       const tailwind = useTailwind();
-      // 
+      const today=format(new Date(),"eeee ',' dd MMM yyyy 'Today'")
       return(
-        <View style={tailwind('justify-center w-full h-3/4')}>
+        <View style={[tailwind('justify-center w-full bg-white'), styles.container]}>
+            <Text>{today}</Text>
             <FlatList 
                 data={taskList} 
                 renderItem={itemData=><TaskCard 
@@ -72,4 +71,11 @@
         </View>
       )
   }
+
+  const styles = StyleSheet.create({
+    container: {
+      height: '60%',
+    },
+  });
+  
 
