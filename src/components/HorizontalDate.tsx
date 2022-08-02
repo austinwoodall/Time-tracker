@@ -1,10 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import {useTailwind} from 'tailwind-rn';
-import { MaterialIcons  } from '@expo/vector-icons'; 
-import { format } from 'date-fns';
-import sub from 'date-fns/sub'
-import add from 'date-fns/add'
+import {sub, add, format} from 'date-fns';
 
 interface DateCardProps {
     day:Date;
@@ -15,7 +12,6 @@ function DateCard({day}:DateCardProps){
     const daysOfWeek=['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
     const dayIndex=typeof format(day,'i')==="string"?parseInt(format(day,'i'))-1: -999;
 
-    console.log(`${daysOfWeek[dayIndex]}:`,day.getDate())
     return(
         <View style={tailwind('bg-white w-16 mx-1 rounded-md border-black border-2')}>
             <View style={tailwind('bg-red-400 w-full h-2')}></View>

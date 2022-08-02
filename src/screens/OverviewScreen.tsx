@@ -1,6 +1,3 @@
-// <<<<<<< HEAD
-// import React from 'react';
-// =======
 import React from "react";
 import { SafeAreaView, Text, View } from "react-native";
 import { useTailwind } from "tailwind-rn";
