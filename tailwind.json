@@ -11,14 +11,19 @@
 			"marginRight": "auto"
 		}
 	},
-	"ml-auto": {
-		"style": {
-			"marginLeft": "auto"
-		}
-	},
 	"mt-20": {
 		"style": {
 			"marginTop": 80
+		}
+	},
+	"ml-3": {
+		"style": {
+			"marginLeft": 12
+		}
+	},
+	"ml-auto": {
+		"style": {
+			"marginLeft": "auto"
 		}
 	},
 	"flex": {
@@ -64,6 +69,16 @@
 	"items-center": {
 		"style": {
 			"alignItems": "center"
+		}
+	},
+	"justify-start": {
+		"style": {
+			"justifyContent": "flex-start"
+		}
+	},
+	"justify-end": {
+		"style": {
+			"justifyContent": "flex-end"
 		}
 	},
 	"justify-center": {
@@ -147,6 +162,12 @@
 		"style": {
 			"--tw-bg-opacity": 1,
 			"backgroundColor": "rgb(74 222 128 / var(--tw-bg-opacity))"
+		}
+	},
+	"bg-green-600": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(22 163 74 / var(--tw-bg-opacity))"
 		}
 	},
 	"bg-blue-200": {

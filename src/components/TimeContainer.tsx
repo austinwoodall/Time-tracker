@@ -53,7 +53,7 @@
   
       return(
 
-          <View style={tailwind('mt-20 mx-auto w-3/4 rounded-sm border-black border-2 p-2 flex flex-row justify-center')}>
+          <View style={tailwind('bg-white mx-auto w-full rounded-sm border-black border-2 p-2 flex flex-row justify-center')}>
               <View style={tailwind('justify-center w-3/4')}>
                   {toggleTime &&
                   <>
@@ -92,14 +92,14 @@
                           </View>
                       </View>
                   </View>
-                  <Pressable style={tailwind('flex-row justify-center bg-red-400')}>
+                  <Pressable style={tailwind('flex-row justify-center')}>
                       <MaterialCommunityIcons onPress={handleTimeToggleEnd} name="stop-circle-outline" size={60} color="black" />
                   </Pressable>
                   </>
                   }
   
                   {!toggleTime &&
-                  <Pressable style={[tailwind('flex-row justify-center bg-green-400'),styles.clipPath]}>
+                  <Pressable style={[tailwind('flex-row justify-center'),styles.clipPath]}>
                       <MaterialIcons onPress={handleTimeToggleStart} name="play-circle-filled" size={60} color="black" />
                   </Pressable>
                   }

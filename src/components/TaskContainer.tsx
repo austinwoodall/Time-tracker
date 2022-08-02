@@ -56,7 +56,7 @@
       const tailwind = useTailwind();
       // 
       return(
-        <View>
+        <View style={tailwind('justify-center w-full h-3/4')}>
             <FlatList 
                 data={taskList} 
                 renderItem={itemData=><TaskCard 
