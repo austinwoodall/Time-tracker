@@ -6,3 +6,4 @@ export { default as TaskContainer } from "./TaskContainer";
 export { default as TimeContainer } from "./TimeContainer";
 export { default as HorizontalDate } from "./HorizontalDate";
 export { default as BottomTabs } from "./BottomTabs";
+export { default as GlobalHeader } from "./GlobalHeader";

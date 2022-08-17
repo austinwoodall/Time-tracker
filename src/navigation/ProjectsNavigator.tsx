@@ -6,9 +6,7 @@ const Stack = createNativeStackNavigator();
 
 const ProjectsNavigator = () => {
 	return (
-		<Stack.Navigator
-			screenOptions={{ headerShown: false, presentation: "formSheet" }}
-		>
+		<Stack.Navigator screenOptions={{ headerShown: false }}>
 			<Stack.Screen name={"Projects"} component={ProjectListScreen} />
 			<Stack.Screen name={"CreateProject"} component={CreateProjectScreen} />
 		</Stack.Navigator>

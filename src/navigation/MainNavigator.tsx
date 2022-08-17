@@ -8,6 +8,7 @@ import ProjectsNavigator from "./ProjectsNavigator";
 const Tab = createBottomTabNavigator();
 
 const MainNavigator = () => {
+	const isLoggedIn = false;
 	return (
 		<NavigationContainer>
 			<Tab.Navigator screenOptions={{ headerShown: false }}>

@@ -1,14 +1,8 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import { useTailwind } from "tailwind-rn";
 
 const BottomTabs = ({ state, descriptors, navigation }: any) => {
-	const tailwind = useTailwind();
 	return (
-		<View
-			style={tailwind(
-				"absolute self-center bottom-6 mx-4 flex-row rounded-xl justify-between pt-4 pb-4 pl-1 pr-1 bg-gray-800"
-			)}
-		>
+		<View style={{}}>
 			{state?.routes.map((route: any, index: any) => {
 				const { options } = descriptors[route.key];
 				const label =
@@ -51,7 +45,7 @@ const BottomTabs = ({ state, descriptors, navigation }: any) => {
 								{
 									textAlign: "center"
 								},
-								isFocused ? tailwind("text-blue-400") : tailwind("text-white")
+								isFocused ? "white" : "gray"
 							]}
 						>
 							{label}
