@@ -1,20 +1,16 @@
 import React, { useEffect } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { GithubButton, GoogleButton, SocialButton } from "../components";
+import { SocialButton } from "../components";
 import { useTailwind } from "tailwind-rn";
 import { useStore } from "../store";
 
 interface Props {}
 
-const AuthScreen = () => {
+const AuthView = () => {
 	const tailwind = useTailwind();
 
-	const authenticateUser = async ({ user, session, error }: any) => {
-		useStore.setState({
-			user,
-			session,
-			error
-		});
+	const authenticateUser = async ({ session, error }: any) => {
+		useStore.setState({ session, error });
 	};
 
 	return (
@@ -31,8 +27,8 @@ const AuthScreen = () => {
 			</View>
 			<View style={styles.buttonContainer}>
 				<View style={[styles.buttonBox, tailwind("bg-blue-200")]}>
-					<GoogleButton />
-					<GithubButton />
+					<SocialButton provider={"google"} authenticate={authenticateUser} />
+					<SocialButton provider={"github"} authenticate={authenticateUser} />
 					<View
 						style={{
 							alignSelf: "center",
@@ -51,7 +47,7 @@ const AuthScreen = () => {
 	);
 };
 
-export default AuthScreen;
+export default AuthView;
 
 const styles = StyleSheet.create({
 	container: {

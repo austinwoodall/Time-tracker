@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const ProfileScreen = () => {
+const ProjectDetailView = () => {
 	return (
 		<View style={{}}>
-			<Text>Profile Screen</Text>
+			<Text>Project Details Screen</Text>
 		</View>
 	);
 };
 
-export default ProfileScreen;
+export default ProjectDetailView;

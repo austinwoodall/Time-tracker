@@ -12,3 +12,4 @@ export { default as NavigationList } from "./NavigationList";
 export { default as TopRowNavigation } from "./TopRowNavigation";
 export { default as GithubButton } from "./GithubButton";
 export { default as GoogleButton } from "./GoogleButton";
+export { default as SocialButton } from "./SocialButton";

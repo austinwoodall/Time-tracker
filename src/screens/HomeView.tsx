@@ -10,14 +10,18 @@ import {
 import { NavigationList, TopRowNavigation } from "../components";
 import { format } from "date-fns";
 import { useTailwind } from "tailwind-rn";
+import { useStore } from "../store";
 
-const OverviewScreen = () => {
+const HomeView = () => {
 	const tailwind = useTailwind();
 	const todayWeekday = new Date();
+	const store = useStore((state) => state.session.user_metadata.name);
+	const name = store.substr(0, store.indexOf(" "));
+
 	return (
 		<View style={styles.container}>
 			<View style={[styles.greetingContainer, tailwind("bg-blue-400")]}>
-				<Text style={styles.greeting}>Hello Austin,</Text>
+				<Text style={styles.greeting}>Hello {name},</Text>
 				<Text style={styles.sub}>
 					Happy {format(todayWeekday, "eeee")}, Let's hustle!
 				</Text>
@@ -30,7 +34,7 @@ const OverviewScreen = () => {
 	);
 };
 
-export default OverviewScreen;
+export default HomeView;
 
 const styles = StyleSheet.create({
 	container: {

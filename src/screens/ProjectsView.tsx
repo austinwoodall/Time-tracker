@@ -3,9 +3,9 @@ import React from "react";
 import { View, Text, StyleSheet, SafeAreaView, ScrollView } from "react-native";
 import { Button } from "../components";
 
-const ProjectListScreen = () => {
+const ProjectsView = () => {
 	const navigation = useNavigation();
-	const isThereProjects = true;
+	const isThereProjects = false;
 
 	return (
 		<SafeAreaView style={styles.container}>
@@ -36,12 +36,13 @@ const ProjectListScreen = () => {
 						/>
 					</>
 				)}
+				<Button title={"Back"} onPress={() => navigation.goBack()} />
 			</ScrollView>
 		</SafeAreaView>
 	);
 };
 
-export default ProjectListScreen;
+export default ProjectsView;
 
 const styles = StyleSheet.create({
 	container: {

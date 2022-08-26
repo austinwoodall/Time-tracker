@@ -1,5 +1,8 @@
-export { default as OverviewScreen } from "./OverviewScreen";
-export { default as ProjectListScreen } from "./ProjectListScreen";
-export { default as ProjectDetailScreen } from "./ProjectDetailScreen";
-export { default as CreateProjectScreen } from "./CreateProjectScreen";
-export { default as AuthScreen } from "./AuthScreen";
+export { default as HomeView } from "./HomeView";
+export { default as ProjectsView } from "./ProjectsView";
+export { default as ProjectDetailView } from "./ProjectDetailView";
+export { default as CreateProjectView } from "./CreateProjectView";
+export { default as AuthView } from "./AuthView";
+export { default as AccountView } from "./AccountView";
+export { default as ClientsView } from "./ClientsView";
+export { default as CreateClientView } from "./CreateClientView";

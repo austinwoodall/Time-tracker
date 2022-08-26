@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const TaskDetailScreen = () => {
+const TaskDetailView = () => {
 	return (
 		<View style={[]}>
 			<Text>Task Details Screen</Text>
@@ -9,4 +9,4 @@ const TaskDetailScreen = () => {
 	);
 };
 
-export default TaskDetailScreen;
+export default TaskDetailView;

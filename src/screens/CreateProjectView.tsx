@@ -10,7 +10,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { Button, Input } from "../components";
 
-const CreateProjectScreen = () => {
+const CreateProjectView = () => {
 	const navigation = useNavigation();
 	return (
 		<SafeAreaView style={styles.container}>
@@ -37,7 +37,7 @@ const CreateProjectScreen = () => {
 	);
 };
 
-export default CreateProjectScreen;
+export default CreateProjectView;
 
 const styles = StyleSheet.create({
 	container: {
