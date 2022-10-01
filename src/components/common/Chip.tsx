@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { StyleSheet, View } from "react-native";
 
 interface Props {}
 
 const Chip = () => {
-  return <div></div>
-}
+	return <View></View>;
+};
 
-export default Chip
+export default Chip;
