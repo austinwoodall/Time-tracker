@@ -15,8 +15,8 @@ import { useStore } from "../store";
 const HomeView = () => {
 	const tailwind = useTailwind();
 	const todayWeekday = new Date();
-	const store = useStore((state) => state.session.user_metadata.name);
-	const name = store.substr(0, store.indexOf(" "));
+	const store = useStore((state) => state?.session?.user_metadata.name);
+	const name = store?.substr(0, store.indexOf(" "));
 
 	return (
 		<View style={styles.container}>
